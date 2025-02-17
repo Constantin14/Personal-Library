@@ -1,0 +1,28 @@
+div.fixed {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    
+
+}
+
+button {
+  border-image: linear-gradient(to right, #f6ff00, #d87f0a) 1;
+  border-width: 4px;
+  padding: 3px;
+  margin: 2px;
+  border-radius: 12px;
+  cursor: pointer;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+  
+}
+
+button:hover {
+background-color: #d87f0a;
+color: black;
+}  
+
+
+
+

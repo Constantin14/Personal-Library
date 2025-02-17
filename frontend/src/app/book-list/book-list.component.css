@@ -1,0 +1,95 @@
+button {
+    border-image: linear-gradient(to right, #f6ff00, #d87f0a) 1;
+    border-width: 4px;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 12px;
+    cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+    
+}
+
+button:hover {
+  background-color: #d87f0a;
+  color: black;
+} 
+
+#yearFilter {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    
+}
+
+#showBooks {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  
+}
+
+#addBook {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  
+}
+
+
+#bookList{
+  position: relative;
+  top: 60px;
+  text-align: center;
+  height: 350px;
+  width: 1100px;
+  float: left;
+  overflow-y: auto;
+  
+}
+
+#book{
+  width: 250px;
+  height: 350px;
+  background-image: url("carte.JPG");
+  background-size: contain;
+  align-items: center;
+  position: relative;
+  float: left;
+  opacity: 1;
+  margin: 10px;
+  
+}
+
+#price {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  
+}
+
+#title{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: 100px;
+  left: 37px;
+}
+
+input {
+  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('search.png');
+  background-position: 5px 5px; 
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding: 0px 0px 0px 20px;
+}
+
+ 
+
+

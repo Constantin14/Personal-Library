@@ -1,0 +1,18 @@
+h1.relative {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: azure;
+    
+}
+
+:host {
+    
+    display: block;
+    background-image: url("background.jpg");
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+

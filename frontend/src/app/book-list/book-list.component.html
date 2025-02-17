@@ -1,0 +1,37 @@
+<div id="yearFilter" class="relative">
+<input [(ngModel)]="year"> 
+<button (click)="applyFilter()">Show Books Read by Year</button>
+</div>
+
+<div id="showBooks" class="relative">
+<button (click)="applyReadFilter()">Show Read Books</button>
+<button (click)="applyUnReadFilter()">Show Unread Books</button>
+<button (click)="applyNoReadFilter()">Show All Books</button>
+</div>
+
+<div id="addBook" class="relative"> 
+    <button routerLink="/book-handler">AddNewBook</button>  
+</div>
+
+<!-- <div id="bookList" class="relative">
+    <div id="book" class="relative" *ngFor="let book of allBooks" [routerLink]="['/book',book.bookId]">
+        <div id="title">{{ book.title }}</div>
+        <div id="author">{{ book.author }}</div>
+    </div>
+</div> -->
+
+<div id="bookList" class="relative">
+    @for (book of allBooks; track $index){
+    <div id="book" class="relative" [routerLink]="['/book',book.bookId]">
+        <div id="title">{{ book.title }}</div>
+        <div id="author">{{ book.author }}</div>
+    </div>
+}
+</div>
+
+<div id="price" class="relative">
+    <button (click)="applyPriceFilter()">Show Price</button>
+    <h3 [hidden]="showPrice()" style="color: azure;">The price for these books is {{totalPrice}} RON</h3>
+</div>
+
+

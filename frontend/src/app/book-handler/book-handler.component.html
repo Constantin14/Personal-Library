@@ -1,0 +1,44 @@
+<div id="newBook" class="relative">
+<div>
+    <label>Title</label>
+    <br>
+    <input [(ngModel)] = "bookModel.title">
+</div>
+
+<div>
+    <label>Author</label>
+    <br>
+    <input [(ngModel)] = "bookModel.author">
+</div>
+
+<div>
+    <label>Price</label>
+    <br>
+    <input [(ngModel)] = "bookModel.price">
+</div>
+
+<div>
+    <label>Rating</label>
+    <br>
+    <input [(ngModel)] = "bookModel.rating">
+</div>
+
+<div>
+    <label>Add the year when the book was read</label>
+    <br>
+    <input [(ngModel)] = "bookModel.year">
+</div>
+
+<div>
+    <label>BookLink</label>
+    <br>
+    <input [(ngModel)] = "bookModel.bookLink">
+</div>
+
+<div>
+    <label>IsRead</label>
+    <input type="checkbox" [(ngModel)] = "bookModel.isRead">
+</div>
+<button (click)="addBook()">AddBook</button>
+<button (click)="goHome()">Back</button> 
+</div>

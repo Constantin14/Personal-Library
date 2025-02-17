@@ -1,0 +1,48 @@
+<div id="updateBook" class="relative">
+<div>
+    <label>Title</label>
+    <br>
+    <input [(ngModel)] = "selectedBook.title">
+</div>
+
+<div>
+    <label>Author</label>
+    <br>
+    <input [(ngModel)] = "selectedBook.author">
+</div>
+
+<div>
+    <label>Price</label>
+    <br>
+    <input [(ngModel)] = "selectedBook.price">
+</div>
+
+<div>
+    <label>Rating</label>
+    <br>
+    <input [(ngModel)] = "selectedBook.rating">
+</div>
+
+<div>
+    <label>Add the year when the bock was read</label>
+    <br>
+    <input [(ngModel)] = "selectedBook.year">
+</div>
+
+<div>
+    <label>BookLink</label>
+    <br>
+    <input [(ngModel)] = "selectedBook.bookLink">
+    <a [href]="selectedBook.bookLink">Book Link</a>
+</div>
+
+<div>
+    <label>IsRead</label>
+    <input type="checkbox" [(ngModel)] = "selectedBook.isRead">
+</div>
+
+
+<button (click)="deleteBook()">DeleteBook</button>
+<button (click)="updateBook()">updateBook</button>
+<button (click)="goHome()">Back</button> 
+</div>

@@ -1,0 +1,17 @@
+<section class="fixed">
+<div>
+    <label>Username</label>
+    <input [(ngModel)] = "user.username"/>
+</div>
+
+<div>
+    <label>Password</label>
+    <input type="password" [(ngModel)] = "user.password"/>
+</div>
+
+<button (click)="handleSubmit()">Sign in</button>
+<button (click)="goHome()">Back</button> 
+</section>
+    
+
+   

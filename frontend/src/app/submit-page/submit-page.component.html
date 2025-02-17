@@ -1,0 +1,78 @@
+<form [formGroup]="regiForm" (ngSubmit)="addUser()" novalidate>
+<section class="fixed">
+    <div>
+        <label for="username"> Username </label>
+        <br>
+        <input type="text" id="username" name="username" formControlName="username">
+    </div>
+    <div>
+        <label for="city"> City </label>
+        <br>
+        <input type="text" id="city" name="city" formControlName="city">
+    </div>
+    <div>
+        <label for="email"> Email </label>
+        <br>
+        <input type="text" id="email" name="email" formControlName="email">
+        <div 
+        *ngIf="!regiForm.controls.email?.valid && (regiForm.controls.email?.dirty
+        || regiForm.controls.email?.touched)" class="alert alert-danger">
+          Email is not valid
+        </div>
+    </div>    
+    
+    <div>
+        <label for="password"> Password </label>
+        <br>
+        <input type="password" id="password" name="password" formControlName="password" #pw>
+        <div 
+        *ngIf="!regiForm.controls.password?.valid && (regiForm.controls.password?.dirty
+        || regiForm.controls.password?.touched)" class="alert alert-danger">
+          Password is not valid
+        </div>
+    </div>     
+    
+    <div>
+        <label for="confirmPassword"> Confirm Password </label>
+        <br>
+        <input type="password" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword" #cpw
+        (change)='checkPasswords(pw.value, cpw.value)'>
+        @if(!regiForm.controls.confirmPassword.valid && (regiForm.controls.confirmPassword.dirty
+        || regiForm.controls.confirmPassword.touched)){
+        <div class="alert alert-danger">Password & Confirm-Password do not match
+           
+        </div>
+        }
+    </div>
+    <div>
+        <button type="submit"[disabled]="!regiForm.valid">Submit</button>
+        <button (click)="goBack()">Back</button>
+    </div>
+</section>
+</form>
+
+<!-- <form class="form-group" (submit)="addUser()" #form="ngForm" ngNativeValidate>
+    <section class="fixed">
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input id="username" name = "username" [(ngModel)] = "userModel.username" #username="ngModel" required  minlength="5"/>
+            <div *ngIf="(username.dirty || username.touched) && username.invalid">
+                <small style="color: red;" *ngIf="username.errors?.['required']">Username should not be empty</small>
+                <small style="color: red;" *ngIf="username.errors?.['minlength']">Username should not have a length smaller than 5</small>
+            </div>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" name = "password" [(ngModel)] = "userModel.password" #password="ngModel" required minlength="5"/>
+            <div *ngIf="(password.dirty || password.touched) && password.invalid">
+                <small style="color: red;" *ngIf="password.errors?.['required']">Password should not be empty</small>
+                <small style="color: red;" *ngIf="password.errors?.['minlength']">Password should not have a length smaller than 5</small>
+            </div>
+        </div>
+        
+        
+        <button type="submit">Submit</button> 
+        <button (click)="goBack()">Back</button> 
+    </section>  
+</form> -->
+ 
