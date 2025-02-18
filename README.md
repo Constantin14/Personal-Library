@@ -21,3 +21,8 @@ Application Requirements
 Below are some pictures from the application and a picture of a physical library after which the application was made.
 Only 5 books were added to the application, one book read in 2024, two read in 2025, and two that have not been read yet.
 ![68825fe0-f687-4ff7-9fb9-41f55d5b60e4](https://github.com/user-attachments/assets/e2310a4c-6698-4d59-98a1-c8be04d2ace9)
+![Picture1](https://github.com/user-attachments/assets/c10d2dfc-3d9d-4583-aa17-26108fb5aa68)
+![Picture2](https://github.com/user-attachments/assets/0d6f1f57-afbd-4e6c-b32d-c887dd6a65f4)
+![Picture3](https://github.com/user-attachments/assets/b508429f-dc5b-421e-899f-5a77714f6732)
+![Picture4](https://github.com/user-attachments/assets/c34f4629-0a33-460f-9ed8-c9f93a68fd89)
+![Picture10](https://github.com/user-attachments/assets/2d5acc9b-3a4b-4cb5-aa1f-275c1a481d00)
