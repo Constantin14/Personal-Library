@@ -11,16 +11,16 @@ This application is a digital library where users can:
 
 Application Requirements
 
-- the appliction should allow users to create accounts
-- in order to use the personal library users must log in
-- the user shall be able to log out
-- the application shall logged out the user automatically after 30 minutes of inactivity
-- the application shall be able to contain a database with books 
-- the application shall permit users to see, add, update and delete books
-- the application shall create a specific link between users and books, each user can have access to books which are added by him
-- the application shall have specific filters to see books which are read, unread and all books
-- the application shall be able to show books by the year when the books were read.
-- the application shall be able to show the price for books
+- The application shall allow users to create accounts.
+- In order to use the personal library, users must log in.
+- Users shall be able to log out manually.
+- The application shall automatically log out users after 30 minutes of inactivity.
+- The application shall use a database to store information about books.
+- The application shall allow users to view, add, update, and delete books.
+- Each user shall have access only to the books they have added (user-book ownership link).
+- The application shall provide filters to display books by status: read, unread, and all.
+- The application shall allow books to be filtered or sorted by the year they were read.
+- The application shall display the price of each book, if available.
 
 Below are some pictures from the application and a picture of a physical library after which the application was made.
 Only 5 books were added to the application, one book read in 2024, two read in 2025, and two that have not been read yet.
