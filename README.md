@@ -2,8 +2,12 @@
 
 This repository contains the front-end and back-end code of my personal library application. 
 The front end was build using Angular with VS Code and the back-end was build using Spring Boot with IntelliJ IDEA. 
-In order to respect a minimum security requirements the application should use Spring Security for securing back-end. 
-This application is using PostgreSQL for database.
+In order to respect a minimum security requirements the application should use Spring Security for securing back-end and for database is using PostgreSQL.
+
+This application is a digital library where users can:
+Create an account to log in with, if the user is inactive for 30 minutes, they will be automatically logged out.
+Create a database where they can add, modify or delete books from their library.
+Different filters have been created for the books in the database to be able to see different information such as books that were read in a certain year or books in the library that have not yet been read.
 
 Application Requirements
 
